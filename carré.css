@@ -1,0 +1,48 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+}
+
+h3 {
+  margin-bottom: 50px;
+  font-size: 2em;
+  color: #333;
+}
+
+.carré {
+  width: 150px;
+  height: 150px;
+  background-color: yellow;
+  animation: rotateColorChange 2s infinite linear alternate;
+}
+
+@keyframes rotateColorChange {
+  0% {
+    transform: rotate(0deg);
+    background-color: red;
+  }
+  25% {
+    transform: rotate(90deg);
+    background-color: orange;
+  }
+  50% {
+    transform: rotate(180deg);
+    background-color: yellow;
+  }
+  75% {
+    transform: rotate(270deg);
+    background-color: orange;
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: yellow;
+  }
+}
+  
+  
